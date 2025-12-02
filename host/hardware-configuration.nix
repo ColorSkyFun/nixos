@@ -14,32 +14,26 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
   boot.initrd.availableKernelModules = [
     "vmd"
     "xhci_pci"
     "thunderbolt"
     "nvme"
-    "usbhid"
     "usb_storage"
+    "usbhid"
     "sd_mod"
   ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [
-    "kvm-intel"
-    "kvmfr"
-  ];
-  boot.extraModulePackages = [
-    pkgs.linuxKernel.packages.linux_zen.kvmfr
-  ];
+  boot.kernelModules = [ "kvm-intel" ];
+  boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/f38c0fb0-1bc3-4466-b28c-74728d1903d6";
+    device = "/dev/disk/by-uuid/d3cd476b-249c-4bab-b524-f21ba6070335";
     fsType = "ext4";
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/B66E-C628";
+    device = "/dev/disk/by-uuid/AAB1-1242";
     fsType = "vfat";
     options = [
       "fmask=0022"
@@ -48,17 +42,8 @@
   };
 
   swapDevices = [
-    { device = "/dev/disk/by-uuid/e83db7d0-06a9-48cc-829e-3fcb27081eef"; }
+    { device = "/dev/disk/by-uuid/e8d536f8-59b5-4572-b7d1-512b351ce77f"; }
   ];
-
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp0s20f0u5.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp109s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp108s0.useDHCP = lib.mkDefault true;
 
   # nvidia背光设置
   services.xserver.videoDrivers = [ "nvidia" ];

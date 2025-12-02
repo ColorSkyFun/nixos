@@ -23,6 +23,7 @@ in
     (_: {
       imports = [
         inputs.mango.hmModules.mango
+        inputs.catppuccin.homeModules.catppuccin
 
         ./swaync
         ./waybar
@@ -74,6 +75,12 @@ in
           # wallpaper
           swaybg -i ${wallpaper} >/dev/null 2>&1 &
         '';
+      };
+      # Cursor theme: catppuccin
+      catppuccin.cursors = {
+        accent = "sky";
+        enable = true;
+        flavor = "mocha";
       };
     })
   ];

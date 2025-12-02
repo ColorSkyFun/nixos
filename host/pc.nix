@@ -13,7 +13,7 @@
     ../modules/desktop/mango
     ../modules/desktop/plasma.nix
 
-    ../modules/develop/reverse/ida
+    # ../modules/develop/reverse/ida
     ../modules/develop/reverse/frida.nix
     ../modules/develop/reverse/jadx.nix
     ../modules/develop/reverse/tools.nix
@@ -23,6 +23,8 @@
     ../modules/develop/rust.nix
     ../modules/develop/tools.nix
 
+    ../modules/programs/cli/bash/shell.nix
+    ../modules/programs/cli/fastfetch/fastfetch.nix
     ../modules/programs/browser.nix
     ../modules/programs/chat.nix
     ../modules/programs/editor.nix
