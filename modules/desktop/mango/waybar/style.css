@@ -13,12 +13,12 @@ window#waybar {
 }
 
 tooltip {
-    background: rgba(40, 40, 40, 0.9);
-    border-radius: 4px;
+    background: rgba(30, 30, 46, 0.95);
+    border-radius: 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
-    color: #ddca9e;
+    border-color: #cba6f7;
+    color: #cdd6f4;
 }
 
 #language,
@@ -42,7 +42,7 @@ tooltip {
 #keyboard-state,
 #custom-notification,
 #custom-power {
-    background: none;
+    background: rgba(30, 30, 46, 0.9);
     padding: 0px 10px;
     margin: 0px;
     margin-top: 5px;
@@ -50,14 +50,14 @@ tooltip {
 }
 
 #workspaces {
-    border-radius: 4px;
+    border-radius: 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     margin-left: 4px;
     padding-left: 10px;
     padding-right: 6px;
-    background: rgba(40, 40, 40, 0.9);
+    background: rgba(30, 30, 46, 0.9);
 }
 
 #workspaces button {
@@ -65,7 +65,7 @@ tooltip {
     background: none;
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #ddca9e;
+    color: #a6adc8;
     padding: 1px;
     padding-left: 1px;
     padding-right: 1px;
@@ -74,48 +74,47 @@ tooltip {
 }
 
 #workspaces button.hidden {
-    color: #9e906f;
-
+    color: #6c7086;
     background-color: transparent;
 }
 
 #workspaces button.visible {
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #workspaces button:hover {
-    color: #d79921;
+    color: #f5c2e7;
 }
 
 #workspaces button.active {
-    background-color: #ddca9e;
-    color: #282828;
+    background-color: #cba6f7;
+    color: #1e1e2e;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 1px;
     padding-bottom: 0px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 #workspaces button.urgent {
-    background-color: #ef5e5e;
-    color: #282828;
+    background-color: #f38ba8;
+    color: #1e1e2e;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 1px;
     padding-bottom: 0px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 #tags {
-    border-radius: 4px;
+    border-radius: 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     margin-left: 4px;
     padding-left: 10px;
     padding-right: 6px;
-    background: rgba(40, 40, 40, 0.9);
+    background: rgba(30, 30, 46, 0.9);
 }
 
 #tags button {
@@ -123,7 +122,7 @@ tooltip {
     background: none;
     box-shadow: inherit;
     text-shadow: inherit;
-    color: #928374;
+    color: #6c7086;
     padding: 1px;
     padding-left: 1px;
     padding-right: 1px;
@@ -131,7 +130,7 @@ tooltip {
 }
 
 #tags button {
-    color: #928374;
+    color: #6c7086;
 }
 
 #tags button:not(.occupied):not(.focused):not(.overview):not(.urgent) {
@@ -145,124 +144,124 @@ tooltip {
 }
 
 #tags button.occupied {
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #tags button.overview {
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #tags button:hover {
-    color: #d79921;
+    color: #f5c2e7;
 }
 
 #tags button.focused {
-    background-color: #ddca9e;
-    color: #282828;
+    background-color: #cba6f7;
+    color: #1e1e2e;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 1px;
     padding-bottom: 0px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 #tags button.urgent {
-    background-color: #ef5e5e;
-    color: #282828;
+    background-color: #f38ba8;
+    color: #1e1e2e;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 1px;
     padding-bottom: 0px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 #tray {
-    background: rgba(40, 40, 40, 0.9);
-    border-radius: 4px;
+    background: rgba(30, 30, 46, 0.9);
+    border-radius: 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     margin-right: 4px;
     margin-left: 4px;
     padding-right: 8px;
     padding-left: 9px;
     padding-top: 2px;
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #network {
-    background: rgba(40, 40, 40, 0.9);
-    border-radius: 4px;
+    background: rgba(30, 30, 46, 0.9);
+    border-radius: 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     margin-right: 4px;
     margin-left: 0px;
     padding-right: 12px;
     padding-left: 9px;
     padding-top: 2px;
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #workspaces {
-    background: rgba(40, 40, 40, 0.9);
-    border-radius: 4px;
+    background: rgba(30, 30, 46, 0.9);
+    border-radius: 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     margin-left: 4px;
     padding-right: 6px;
     padding-left: 4px;
 }
 
 #language {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-right: 0px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 12px 0px 0px 12px;
     min-width: 24px;
 }
 
 #keyboard-state {
     background: none;
-    color: #ddca9e;
+    color: #cdd6f4;
     border: none;
     padding-top: 1px;
 }
 
 #custom-updates {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
-    border-radius: 0px 4px 4px 0px;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
+    border-radius: 0px 12px 12px 0px;
     border-width: 2px;
     border-left: 0px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
 }
 
 #window {
-    background: rgba(40, 40, 40, 0.9);
+    background: rgba(30, 30, 46, 0.9);
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
-    border-radius: 4px;
+    border-color: #cba6f7;
+    border-radius: 12px;
     margin-left: 0px;
     margin-right: 10px;
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #taskbar {
-    background: rgba(40, 40, 40, 0.9);
+    background: rgba(30, 30, 46, 0.9);
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
-    border-radius: 4px;
+    border-color: #cba6f7;
+    border-radius: 12px;
     margin-left: 10px;
     margin-right: 10px;
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #taskbar.empty {
@@ -281,134 +280,134 @@ tooltip {
 }
 
 #taskbar button.minimized {
-    background-color: #c4939d;
-    color: #282828;
+    background-color: #eba0ac;
+    color: #1e1e2e;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 3px;
     padding-right: 3px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 #taskbar button.urgent {
-    background-color: #ce3d0d;
-    color: #282828;
+    background-color: #f38ba8;
+    color: #1e1e2e;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 3px;
     padding-right: 3px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 #taskbar button.active {
-    background-color: #ddca9e;
-    color: #282828;
+    background-color: #cba6f7;
+    color: #1e1e2e;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 3px;
     padding-right: 3px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 #custom-playerctl {
-    background: rgba(40, 40, 40, 0.9);
+    background: rgba(30, 30, 46, 0.9);
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-right: 0px;
     border-left: 0px;
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #cava {
-    background: rgba(40, 40, 40, 0.9);
-    border-radius: 4px 0px 0px 4px;
+    background: rgba(30, 30, 46, 0.9);
+    border-radius: 12px 0px 0px 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     margin-left: 4px;
-    color: #ddca9e;
+    color: #cdd6f4;
 }
 
 #clock {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-right: 2px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 12px 0px 0px 12px;
 }
 
 #pulseaudio {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-right: 0px;
     margin-left: 0px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 12px 0px 0px 12px;
 }
 
 #cpu {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-right: 0px;
     border-left: 0px;
     border-radius: 0px;
 }
 
 #temperature {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-right: 0px;
     border-left: 0px;
     border-radius: 0px;
 }
 
 #backlight {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
-    border-radius: 0px 4px 4px 0px;
+    border-color: #cba6f7;
+    border-radius: 0px 12px 12px 0px;
     border-left: 0px;
     margin-right: 4px;
 }
 
 #battery {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-radius: 0px;
     border-right: 0px;
     border-left: 0px;
 }
 
 #custom-weather {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
-    border-radius: 4px 0px 0px 4px;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
+    border-radius: 12px 0px 0px 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-right: 0px;
     margin-left: 4px;
     padding-right: 7px;
@@ -416,11 +415,11 @@ tooltip {
 }
 
 #custom-notification {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
+    border-color: #cba6f7;
     border-left: 0px;
     border-right: 0px;
     border-radius: 0px;
@@ -428,12 +427,12 @@ tooltip {
 }
 
 #custom-power {
-    background: rgba(40, 40, 40, 0.9);
-    color: #ddca9e;
+    background: rgba(30, 30, 46, 0.9);
+    color: #cdd6f4;
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
-    border-radius: 0px 4px 4px 0px;
+    border-color: #cba6f7;
+    border-radius: 0px 12px 12px 0px;
     border-left: 0px;
     margin-left: 0px;
     margin-right: 4px;
@@ -443,18 +442,18 @@ tooltip {
 menu {
     border-width: 2px;
     border-style: solid;
-    border-color: #c9b890;
-    background: rgba(40, 40, 40, 0.9);
-    border-radius: 10px;
+    border-color: #cba6f7;
+    background: rgba(30, 30, 46, 0.95);
+    border-radius: 12px;
 }
 
 menuitem:focus label,
 menuitem:hover label {
-    color: #010101;
-    background: #c9b890;
+    color: #1e1e2e;
+    background: #cba6f7;
 }
 
 menuitem:focus,
 menuitem:hover {
-    background: #c9b890;
+    background: #cba6f7;
 }

@@ -11,7 +11,7 @@ let
   env = ./dotfiles/env.conf;
   rule = ./dotfiles/rule.conf;
   autostart = ./dotfiles/autostart.sh;
-  wallpaper = ./res/wallpaper.png;
+  wallpaper = ./res/wallpaper.jpg;
 in
 {
   imports = [
