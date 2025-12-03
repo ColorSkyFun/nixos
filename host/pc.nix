@@ -9,7 +9,7 @@
     ../modules/core/prog.nix
     ../modules/core/video.nix
 
-    ../modules/desktop/i18n.nix
+    ../modules/desktop/fcitx5/fcitx5.nix
     ../modules/desktop/mango
     ../modules/desktop/plasma.nix
 

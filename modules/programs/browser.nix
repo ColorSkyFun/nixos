@@ -1,7 +1,12 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
   home-manager.sharedModules = [
     (_: {
+      imports = [
+        inputs.zen-browser.homeModules.beta
+      ];
+      programs.zen-browser.enable = true;
+
       home.packages = with pkgs; [
         (microsoft-edge.override {
           commandLineArgs = [

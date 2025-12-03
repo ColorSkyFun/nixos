@@ -32,7 +32,6 @@ in
 
       home.packages = with pkgs; [
         alacritty
-        obs-studio
         rofi
         xdg-desktop-portal-wlr
         swaybg
@@ -76,11 +75,24 @@ in
           swaybg -i ${wallpaper} >/dev/null 2>&1 &
         '';
       };
+
+      programs = {
+        obs-studio.enable = true;
+      };
+
+      xdg.configFile."rofi/config.rasi".source = ./res/rofi_config.rasi;
+
       # Cursor theme: catppuccin
-      catppuccin.cursors = {
-        accent = "sky";
-        enable = true;
-        flavor = "mocha";
+      catppuccin = {
+        cursors = {
+          accent = "sky";
+          enable = true;
+          flavor = "mocha";
+        };
+        obs = {
+          enable = true;
+          flavor = "mocha";
+        };
       };
     })
   ];
