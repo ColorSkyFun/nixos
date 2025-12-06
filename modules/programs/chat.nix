@@ -6,6 +6,7 @@
         (qq.override {
           commandLineArgs = [
             "--disable-gpu"
+            "--ozone-platform=wayland"
           ];
         })
         wechat

@@ -28,6 +28,7 @@
     ../modules/programs/browser.nix
     ../modules/programs/chat.nix
     ../modules/programs/editor.nix
+    ../modules/programs/media.nix
     ../modules/programs/office.nix
 
     ../modules/vm/kvm.nix
@@ -39,6 +40,11 @@
   networking.hostName = "color";
 
   networking.networkmanager.enable = true;
+
+  networking.hosts."127.0.0.1" = [
+    # Block this domain to prevent QQ from auto-updating.
+    "qqpatch.gtimg.cn"
+  ];
 
   time.timeZone = "Asia/Shanghai";
 
