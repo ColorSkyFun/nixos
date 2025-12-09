@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     android-tools
+    detect-it-easy
     scrcpy
     ghidra
     rizin

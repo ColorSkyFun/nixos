@@ -25,6 +25,7 @@
   outputs =
     inputs@{ self, nixpkgs, ... }:
     {
+      templates = import ./devShells;
       nixosConfigurations = {
         color = inputs.nixpkgs.lib.nixosSystem {
           specialArgs = {

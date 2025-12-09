@@ -13,6 +13,12 @@ let
   );
 
   reg_script = ./reg.py;
+
+  hrtng = pkgs.fetchurl {
+    url = "https://github.com/KasperskyLab/hrtng/releases/download/v3.7.74/hrtng-ida9.2.zip";
+    sha256 = "e8ea4ebccb887d70c0785eaf7aaa57e5542a6573cbf2f636ceebae6f4d136a69";
+  };
+
   key_patch = fetchGit {
     url = "https://github.com/keystone-engine/keypatch";
     rev = "e7ecb93a4d242e83b9356b8258108773464646d4";
@@ -27,7 +33,7 @@ pkgs.stdenv.mkDerivation rec {
   version = "9.2.0.250908";
 
   src = pkgs.fetchurl {
-    url = "https://dl.colorsky.fun:8443/1_Lm7qGiYj_ida-pro_92_x64linux.run";
+    url = "https://dl.colorsky.fun/ida-pro_92_x64linux.run";
     sha256 = "aadd0f8ae972b84f94f2a974834abf1619f3bd933b3b4d8275f9c50008d05ae1";
   };
 
@@ -44,6 +50,7 @@ pkgs.stdenv.mkDerivation rec {
   desktopItems = [ desktopItem ];
 
   nativeBuildInputs = with pkgs; [
+    unzip
     makeWrapper
     copyDesktopItems
     autoPatchelfHook
@@ -149,6 +156,9 @@ pkgs.stdenv.mkDerivation rec {
 
     # Install Key Patch Plugin
     cp -r ${key_patch}/keypatch.py $out/opt/plugins/keypatch.py
+
+    # Install hrtng Plugin
+    unzip ${hrtng} -d $out/opt/plugins/hrtng/
 
     # Install catppuccin
     cp -r ${catppuccin}/catppuccin-mocha $out/opt/themes/catppuccin-mocha

@@ -1,0 +1,5 @@
+rec {
+  rust = {
+    path = ./rust;
+  };
+}

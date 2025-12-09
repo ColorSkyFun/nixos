@@ -13,7 +13,7 @@
     ../modules/desktop/mango
     ../modules/desktop/plasma.nix
 
-    # ../modules/develop/reverse/ida
+    ../modules/develop/reverse/ida
     ../modules/develop/reverse/frida.nix
     ../modules/develop/reverse/jadx.nix
     ../modules/develop/reverse/tools.nix
