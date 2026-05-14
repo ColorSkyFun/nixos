@@ -6,7 +6,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    mango.url = "github:DreamMaoMao/mango";
+    mangowm = {
+      url = "github:mangowm/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";

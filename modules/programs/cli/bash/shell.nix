@@ -1,5 +1,8 @@
 { pkgs, ... }:
 {
+  environment.systemPackages = with pkgs; [
+    fzf
+  ];
   programs.direnv = {
     enable = true;
   };
@@ -12,6 +15,7 @@
             theme = ./amro.omp.json;
           in
           ''
+            alias zed=zeditor
             eval "$(${pkgs.oh-my-posh}/bin/oh-my-posh init bash --config ${theme})"
             eval "$(${pkgs.direnv}/bin/direnv hook bash)"
             eval "$(${pkgs.fzf}/bin/fzf --bash)"

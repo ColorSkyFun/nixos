@@ -13,10 +13,10 @@
     ../modules/desktop/mango
     ../modules/desktop/plasma.nix
 
-    ../modules/develop/reverse/ida
-    ../modules/develop/reverse/frida.nix
-    ../modules/develop/reverse/jadx.nix
-    ../modules/develop/reverse/tools.nix
+    # ../modules/develop/reverse/ida
+    # ../modules/develop/reverse/frida.nix
+    # ../modules/develop/reverse/jadx.nix
+    # ../modules/develop/reverse/tools.nix
     ../modules/develop/c.nix
     ../modules/develop/nix.nix
     ../modules/develop/python.nix
@@ -31,10 +31,10 @@
     ../modules/programs/media.nix
     ../modules/programs/office.nix
 
-    ../modules/vm/kvm.nix
+    # ../modules/vm/kvm.nix
 
     ./hardware-configuration.nix
-    ./wine.nix
+    # ./wine.nix
   ];
 
   networking.hostName = "color";

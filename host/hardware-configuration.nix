@@ -27,13 +27,20 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  # nvidia背光设置
+  boot.kernelParams = [
+    "nvidia.Nvreg_EnableBacklightHandler=1"
+    "acpi_backlight=native"
+    "acpi_osi=Linux"
+  ];
+
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/d3cd476b-249c-4bab-b524-f21ba6070335";
+    device = "/dev/disk/by-uuid/ec3268e6-813d-4675-aa24-16723ebdfd25";
     fsType = "ext4";
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/AAB1-1242";
+    device = "/dev/disk/by-uuid/6481-FEA3";
     fsType = "vfat";
     options = [
       "fmask=0022"
@@ -42,15 +49,7 @@
   };
 
   swapDevices = [
-    { device = "/dev/disk/by-uuid/e8d536f8-59b5-4572-b7d1-512b351ce77f"; }
-  ];
-
-  # nvidia背光设置
-  services.xserver.videoDrivers = [ "nvidia" ];
-  boot.kernelParams = [
-    "nvidia.Nvreg_EnableBacklightHandler=1"
-    "acpi_backlight=native"
-    "acpi_osi=Linux"
+    { device = "/dev/disk/by-uuid/c97ec825-7d6a-40a3-9473-74eaabad8065"; }
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

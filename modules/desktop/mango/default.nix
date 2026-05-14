@@ -15,16 +15,17 @@ let
 in
 {
   imports = [
-    inputs.mango.nixosModules.mango
+    inputs.mangowm.nixosModules.mango
   ];
   programs.mango.enable = true;
 
   home-manager.sharedModules = [
     (_: {
       imports = [
-        inputs.mango.hmModules.mango
+        inputs.mangowm.hmModules.mango
         inputs.catppuccin.homeModules.catppuccin
 
+        ./alacritty
         ./swaync
         ./waybar
         ./wlogout
