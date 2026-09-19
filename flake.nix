@@ -21,6 +21,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     catppuccin.url = "github:catppuccin/nix";
+
+    daeuniverse.url = "github:daeuniverse/flake.nix";
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs = {

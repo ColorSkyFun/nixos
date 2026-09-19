@@ -29,6 +29,7 @@
     ../modules/programs/cli/fastfetch/fastfetch.nix
     ../modules/programs/browser.nix
     ../modules/programs/chat.nix
+    ../modules/programs/dae.nix
     ../modules/programs/editor.nix
     ../modules/programs/media.nix
     # ../modules/programs/office.nix
