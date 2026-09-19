@@ -5,13 +5,15 @@
     ../modules/core/boot.nix
     ../modules/core/fonts.nix
     ../modules/core/hardware.nix
-    ../modules/core/nix-daemon.nix
+    ../modules/core/nix.nix
     ../modules/core/prog.nix
     ../modules/core/video.nix
 
     ../modules/desktop/fcitx5/fcitx5.nix
-    ../modules/desktop/mango
-    ../modules/desktop/plasma.nix
+    # ../modules/desktop/mango
+    ../modules/desktop/alacritty
+    ../modules/desktop/niri
+    ../modules/desktop/noctalia
 
     # ../modules/develop/reverse/ida
     # ../modules/develop/reverse/frida.nix
@@ -21,7 +23,7 @@
     ../modules/develop/nix.nix
     ../modules/develop/python.nix
     ../modules/develop/rust.nix
-    ../modules/develop/tools.nix
+    # ../modules/develop/tools.nix
 
     ../modules/programs/cli/bash/shell.nix
     ../modules/programs/cli/fastfetch/fastfetch.nix
@@ -29,7 +31,7 @@
     ../modules/programs/chat.nix
     ../modules/programs/editor.nix
     ../modules/programs/media.nix
-    ../modules/programs/office.nix
+    # ../modules/programs/office.nix
 
     # ../modules/vm/kvm.nix
 
@@ -58,7 +60,7 @@
       home = {
         username = "sky";
         homeDirectory = "/home/sky";
-        stateVersion = "25.11";
+        stateVersion = "26.05";
       };
     };
   };
@@ -120,5 +122,5 @@
     )
   ];
   nixpkgs.config.allowUnfree = true;
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.05";
 }
