@@ -10,7 +10,7 @@
     ../modules/core/video.nix
 
     ../modules/desktop/fcitx5/fcitx5.nix
-    # ../modules/desktop/mango
+    ../modules/desktop/ghostty/ghostty.nix
     ../modules/desktop/alacritty
     ../modules/desktop/niri
     ../modules/desktop/noctalia
